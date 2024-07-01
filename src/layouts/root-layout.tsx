@@ -25,19 +25,16 @@ export default function RootLayout() {
         <SignedIn>
           <ul className="flex gap-x-4">
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/organisation">Organisation</Link>
             </li>
             <li>
-              <Link to="/dashboard">Dashboard</Link>
+              <Link to="/user">Manual user</Link>
             </li>
           </ul>
           <UserButton afterSignOutUrl="/sign-in" />
         </SignedIn>
         <SignedOut>
           <ul className="flex gap-x-4">
-            <li>
-              <Link to="/">Home</Link>
-            </li>
             <li>
               <Link to="/sign-up">Sign Up</Link>
             </li>
